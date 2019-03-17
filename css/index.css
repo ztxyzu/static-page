@@ -1,0 +1,378 @@
+body {
+	background-color: #F4F5F9;
+	/*height: 3000px;*/
+}
+header{
+	width: 1300px;
+	height: 100px;
+	margin: 0 auto;
+	/*background-color: pink;*/
+	padding-top: 30px;
+}
+.logo {
+	width: 195px;
+	height: 42px;
+	float: left;
+}
+.logo a {
+	width: 195px;
+	height: 42px;
+	display: block;
+	background: url(../images/logo.png);
+	text-indent: -999px;
+	overflow: hidden;
+	transition: all 0.6s;
+}
+.logo a:hover {
+	transform: rotate(-30deg);
+}
+nav {
+	float: left;
+	margin-left: 40px;
+}
+nav li {
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	margin-left: 12px;
+}
+nav li a {
+	display: inline-block;
+	height: 42px;
+	padding: 0 4px;
+}
+nav li a:hover {
+	border-bottom: 2px solid #00a4ff;
+}
+.search {
+	width: 411px;
+	height: 40px;
+	float: left;
+	margin-left: 50px;
+}
+.search input {
+	height: 40px;
+	width: 361px;
+	border-color: #00a4ff;
+	padding-left: 10px;
+}
+button {
+	width: 50px;
+	height: 40px;
+	background: url(../images/search.png) no-repeat;
+	border: 0;
+	float: right; /*要浮一起浮 logo nav search*/
+}
+.personal {
+	width: 288px;
+	height: 42px;
+	float: right;
+	/*background-color: purple;*/
+}
+.personal a {
+	line-height: 42px;
+	color: #666;
+	font-size: 14px;
+	margin-right: 15px;
+}
+.personal s {
+	line-height: 42px;
+	width: 14px;
+	height: 16px;
+	font-size: 14px;
+	text-decoration: none;
+	/*background-color: blue;*/
+	display: inline-block;
+	position: absolute;
+	margin-right: 35px;
+}
+.personal s::after {
+	content: "";
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background-color: red;
+	position: absolute;
+	top: 10px;
+	right: -4px;
+	border-radius: 50%;
+}
+.personal span {
+	float: right;
+	line-height: 42px;
+	color: #666;
+}
+.personal span img {
+	width: 33px;
+	height: 33px;
+	border-radius: 50px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 1s;
+}
+.personal span img:hover {
+	transform: rotate(360deg);
+}
+.banner {
+	background-color: #1c036c;
+	height: 420px;
+	overflow: hidden;
+}
+.inner {
+	height: 420px;
+	position: relative;
+	/*background: url(../images/banner.jpg) no-repeat top center;*/
+}
+.subnav {
+	height: 420px;
+	width: 190px;
+	background: rgba(0, 0, 0, .3);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.subnav ul {
+	padding: 12px 20px;
+}
+.subnav li {
+	height: 44px;
+	line-height: 44px;
+}
+.subnav li:hover a {
+	color: #00b4ff;
+}
+.subnav li:hover i {
+	float: right;
+}
+.subnav a {
+	height: 44px;
+	width: 100%;
+	display: inline-block;
+	color: #FFF;
+	font-size: 14px;
+}
+.subnav a i {
+	margin-left: 30px;
+}
+.lunbo img {
+	width: 1199px;
+	height: 420px;
+}
+.circle {
+	height: 40px;
+	/*width: 200px;*/
+	/*background: rgba(0, 0, 0, .1);*/
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 14px 0;
+}
+.circle li {
+	width: 12px;
+	height: 12px;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 50%;
+	float: left;
+	margin: 0 15px;
+	transition: width .3s;
+}
+.course {
+	width: 228px;
+	height: 300px;
+	background: rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+.course dt {
+	background-color: #9bceea;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: #FFF;
+}
+.course dd {
+	width: 190px;
+	height: 60px;
+	/*background-color: pink;*/
+	margin: 0 auto;
+	padding: 20px 0 0;
+	border-bottom: 1px dashed #ccc;
+}
+.course dd a {
+	color: #666;
+	font-size: 16px;
+}
+.course dd i {
+	font-size: 14px;
+	color: #999;
+}
+.course dd a:hover i {
+	color: #00a4ff;
+}
+.course dd p {
+	font-size: 14px;
+	color: #999;
+}
+.all {
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	border: 1px solid #00a4ff;
+	margin: 15px auto;
+	text-align: center;
+	font-size: 16px;
+}
+.all:hover {
+	color: #FFF;
+	background-color: #00a4ff;
+}
+.interest {
+	margin-top: 5px;
+	line-height: 60px;
+	height: 60px;
+	background:rgba(0, 0, 0, .2);
+	text-align: center;
+	box-shadow: 8px 5px 20px #000;
+}
+.inter-l {
+	float: left;
+	padding-left: 20px;
+	position: relative;
+}
+.inter-l ul {
+	float: left;
+}
+.inter-l li {
+	float: left;
+	font-size: 14px;
+	color: #333;
+	/*background-color: blue;*/
+}
+.inter-l li s {
+	color: #333;
+	margin: 0 30px;
+}
+.inter-l li:first-child {
+	color: #00a4ff;
+}
+.inter-l i {
+	position: absolute;
+	top: 0;
+	right: -260px;
+	font-size: 14px;
+	color: #00a4ff;
+}
+.recommend {
+	margin-top: 20px;
+}
+.recom-hd {
+	height: 60px;
+	line-height: 60px;
+	/*border: 1px solid red;*/
+}
+.recom-hd span {
+	color: #666;
+	font-size: 18px;
+}
+.recom-hd a {
+	float: right;
+	font-size: 14px;
+	color: #333;
+}
+.recom-bd li {
+	width: 230px;
+	height: 270px;
+	background-color: #FFF;
+	float: left;
+	margin: 7px 5px;
+	overflow: hidden;
+	transition: all .3s;
+}
+.recom-bd li:hover {
+	box-shadow: 8px 5px 20px #666;
+	margin-left: 4px;
+}
+.recom-bd-pic {
+	margin-bottom: 25px;
+}
+.recom-bd-pic img {
+	transition: all 0.3s;
+}
+.recom-bd li:hover img {
+	transform: translateX(-3px);
+}
+.recom-bd h5 {
+	margin: 0 25px;
+}
+.recom-bd span {
+	height: 50px;
+	line-height: 50px;
+	margin: 0 25px;
+	font-size: 12px;
+	color: #000;
+}
+.recom-bd span s {
+	color: orange;
+}
+.footer {
+	padding-top: 30px;
+}
+.footer-l {
+	float: left;
+}
+.footer-l a {
+	width: 195px;
+	height: 42px;
+	display: block;
+	background: url(../images/logo.png);
+	text-indent: -999px;
+	overflow: hidden;
+	transition: all 0.6s;
+}
+.footer-l a:hover {
+	transform: rotate(360deg);
+}
+.footer-l p,.footer-l s {
+	margin-top: 20px;
+	font-size: 12px;
+	color: #666;
+}
+.footer-l i {
+	width: 123px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	display: block;
+	border: 1px solid #00a4ff;
+	margin-top: 25px;
+	color: #00a4ff;
+}
+.footer-l i:hover {
+	background-color: #00a4ff;
+	color: #FFF;
+}
+.footer-r {
+	float: right;
+}
+.footer-r ul {
+	float: left;
+}
+.footer-r ul:nth-child(2) {
+	margin: 0 50px;
+}
+.footer-r li a {
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+	float: right;
+}
+.footer-r li:first-child {
+	margin-bottom: 10px;
+	display: block;
+}

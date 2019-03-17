@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.w {
+	width: 1200px;
+	margin: auto;
+}
+a {
+	color: #333;
+	font-size: 16px;
+	text-decoration: none;
+}
+img	{
+	margin: 0;
+	vertical-align: middle;
+}
+li {
+	list-style: none;
+}
+i {
+	font-style: normal;
+}
+s {
+	text-decoration: none;
+}
+input, botton {
+	outline: none;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
